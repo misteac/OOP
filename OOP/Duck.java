@@ -1,22 +1,22 @@
-public class Dog extends Animal implements Goable, Swimable, Flyable {
+public class Duck extends Animal implements Goable, Swimable, Flyable {
 
-    public Dog(Boolean toGo, Boolean fly, Boolean swim) {
+    public Duck(Boolean toGo, Boolean fly, Boolean swim) {
         super(toGo, fly, swim);
     }
 
     @Override
     public Double flySpeed() {
-        return 0.0;
+        return 40.0;
     }
 
     @Override
     public Double runSpeed() {
-        return 25.0;
+        return 5.0;
     }
 
     @Override
     public Double swimSpeed() {
-        return 5.0;
+        return 10.0;
     }
 
 }

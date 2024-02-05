@@ -23,3 +23,7 @@ public abstract class Animal {
         this.swim = false;
     }
 }
+
+/* diagnose
+ * treat
+ */

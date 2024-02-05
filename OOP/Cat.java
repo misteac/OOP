@@ -1,21 +1,22 @@
-public class Cat extends Animal {
+public class Cat extends Animal implements Goable, Swimable, Flyable {
 
     public Cat(Boolean toGo, Boolean fly, Boolean swim) {
         super(toGo, fly, swim);
     }
 
     @Override
-    public Boolean toGo() {
-        return true;
+    public Double flySpeed() {
+        return 0.0;
     }
 
     @Override
-    public Boolean fly() {
-        return false;
+    public Double runSpeed() {
+        return 35.0;
     }
 
     @Override
-    public Boolean swim() {
-        return false;
+    public Double swimSpeed() {
+        return 0.0;
     }
+
 }
